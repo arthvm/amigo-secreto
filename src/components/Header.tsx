@@ -1,7 +1,11 @@
+import { useNavigate } from "react-router-dom";
+
 export function Header() {
+  const navigateTo = useNavigate()
+
   return (
     <header className="bg-purple flex flex-col items-center justify-center pt-14 md:flex-row">
-      <picture>
+      <picture onClick={() => navigateTo("/")} className="cursor-pointer">
         <source media="(min-width: 768px)" srcSet="/images/logo.png" />
         <img
           src="/images/logo-pequeno.png"

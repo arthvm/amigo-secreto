@@ -1,0 +1,27 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`Basic page > Should render properly 1`] = `
+<div>
+  <header
+    class="bg-purple flex flex-col items-center justify-center pt-14 md:flex-row"
+  >
+    <picture>
+      <source
+        media="(min-width: 768px)"
+        srcset="/images/logo.png"
+      />
+      <img
+        alt="Logo | Sorteador de Amigo Secreto"
+        src="/images/logo-pequeno.png"
+      />
+    </picture>
+    <img
+      class="mb-[-1.75rem]"
+      src="/images/participante.png"
+    />
+  </header>
+  <div
+    class="bg-cream rounded-t-[64px] border-black border flex flex-col justify-center items-center py-12 px-4 md:py-20 md:px-36"
+  />
+</div>
+`;

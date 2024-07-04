@@ -1,0 +1,62 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`Config page > Should render properly 1`] = `
+<div>
+  <h1
+    class="text-purple text-3xl md:text-4xl font-semibold"
+  >
+    Vamos começar!
+  </h1>
+  <div
+    class="flex flex-col gap-3 w-full"
+  >
+    <form
+      class="flex flex-col gap-2 w-full md:flex-row md:bg-black md:rounded-[40px] md:p-[2px] md:gap-[2px] md:shadow-custom"
+    >
+      <div
+        class="flex items-center py-3 px-6 rounded-[37px] border-2 border-black shadow-custom cursor-text gap-4 bg-white md:border-none md:shadow-none md:rounded-r-none md:px-14 md:py-7 md:flex-grow"
+      >
+        <img
+          src="/images/person_add.png"
+        />
+        <input
+          class="flex-1 bg-transparent outline-none"
+          placeholder="Insira os nomes dos participantes"
+          role="textbox"
+          type="text"
+          value=""
+        />
+      </div>
+      <button
+        class="bg-grey w-40 h-12 self-center rounded-[38px] border-black border shadow-custom text-base md:h-20 md:w-56 md:border-none md:shadow-none md:rounded-l-none cursor-pointer"
+        disabled=""
+      >
+        Adicionar
+      </button>
+    </form>
+  </div>
+  <ul />
+  <footer
+    class="flex flex-col gap-6 md:flex-row justify-around items-center w-full"
+  >
+    <button
+      class="bg-orange border-2 border-black rounded-[36px] py-5 px-10 md:py-4 md:px-6 flex gap-6 items-center h-fit shadow-custom hover:bg-purple cursor-pointer"
+      disabled=""
+    >
+      <img
+        class="max-w-10 hidden md:block"
+        src="/images/play_circle.png"
+      />
+      <span
+        class="text-base text-center font-semibold text-white"
+      >
+        Iniciar Brincadeira!
+      </span>
+    </button>
+    <img
+      class="w-[127px] h-[98px] md:w-[237px] md:h-[183px]"
+      src="/images/sacolas.png"
+    />
+  </footer>
+</div>
+`;

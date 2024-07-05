@@ -82,4 +82,40 @@ describe("Draw form", () => {
         const secretFriend = screen.getByRole("alert");
         expect(secretFriend).toBeInTheDocument();
     })
+
+    test("Input is disabled while secret friend is active", () => {
+        render(<RecoilRoot>
+            <DrawForm/>
+        </RecoilRoot>)
+
+        const select =  screen.getByTestId("participant-input")
+        fireEvent.change(select, {
+            target: {
+                value: participants[0]
+            }
+        })
+
+        const button = screen.getByRole("button");
+        fireEvent.click(button);
+
+        expect(select).toBeDisabled()
+    })
+
+    test("Button is disabled while secret friend is active", () => {
+        render(<RecoilRoot>
+            <DrawForm/>
+        </RecoilRoot>)
+
+        const select =  screen.getByTestId("participant-input")
+        fireEvent.change(select, {
+            target: {
+                value: participants[0]
+            }
+        })
+
+        const button = screen.getByRole("button");
+        fireEvent.click(button);
+
+        expect(button).toBeDisabled()
+    })
 })

@@ -24,13 +24,13 @@ export function DrawForm(){
 
     return <section>
         <form className="flex flex-col gap-8 items-center" onSubmit={getParticipantDraw}>
-            <select required aria-placeholder="Selecione seu nome" className="w-full px-7 py-4 rounded-[32px] shadow-custom borde-black border before:right-2 custom-select" 
+            <select disabled={!!secretFriend} required aria-placeholder="Selecione seu nome" className="w-full px-7 py-4 rounded-[32px] shadow-custom borde-black border before:right-2 custom-select" 
             value={currParticipant} onChange={event => setCurrParticipant(event.target.value)} name="currParticipant" id="currParticipant" data-testid="participant-input">
                 <option value="">Selecione seu nome</option>
                 {participantsList.map(participant => <option key={participant}>{participant}</option>)}
             </select>
             <h2 className="text-xl text-center text-black">Clique em sortear para ver quem é seu amigo secreto!</h2>
-            <Button type="draw">Sortear</Button>
+            <Button disabled={!!secretFriend} type="draw">Sortear</Button>
         </form>
         {secretFriend && <p role="alert" className="text-lg text-orange text-center mt-4">{secretFriend}</p>}
     </section>

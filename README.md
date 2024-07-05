@@ -2,7 +2,7 @@
 
 O projeto "Amigo Secreto" é uma aplicação web desenvolvida para organizar sorteios de amigo secreto de forma simples e intuitiva. Através de uma interface amigável, os usuários podem adicionar os nomes dos participantes e realizar o sorteio, facilitando a organização de confraternizações e eventos.
 
-O Projeto pode ser acessado [aqui]()
+O Projeto pode ser acessado [aqui](https://amigosecreto-sorteio.vercel.app/)
 
 ## Objetivo
 
